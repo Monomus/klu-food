@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        name: checking out Repo
+        name: Checking out Repo
       
       - uses: borales/actions-yarn@v2.3.0
-        name: Insatlling Yarn Dependencies
+        name: Installing Yarn Dependencies
         with:
           cmd: install 
           
@@ -24,6 +24,6 @@ jobs:
           cmd: lint:all 
       
       - uses: borales/actions-yarn@v2.3.0
-        name: Building Workspace SharedS
+        name: Building Workspace Shared
         with:
           cmd: workspace @klu-food/shared run
