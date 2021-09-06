@@ -1,0 +1,25 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project":[
+      "./api/tsconfig.json",
+      "./scraper/tsconfig.json",
+      "./shared/tsconfig.json"
+    ]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "es6": true
+  },
+  "plugins": ["@typescript-eslint"],
+  "ignorePatterns": [
+    "dist",
+    "node_modules"
+  ],
+  "rules": {
+    "no-trailing-spaces": "error"
+  }
+}

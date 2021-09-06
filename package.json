@@ -1,8 +1,23 @@
 {
+  "name": "klu-food",
+  "version": "1.0.0",
   "private": "true",
   "workspaces": [
     "shared",
     "scraper",
     "api"
-  ]
+  ],
+  "scripts": {
+    "lint": "eslint shared/src/**/*",
+    "prettier": "prettier shared/src/**/* --check",
+    "prettier:fix": "prettier shared/src/**/* --write"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.2",
+    "prettier": "^2.3.2",
+    "eslint": "^7.32.0",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "jest": "^27.1.0"
+  }
 }

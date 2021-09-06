@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2020",
+    "lib": ["ESNext"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "strict": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@klu-food/*": [
+        "/api/src/index.ts",
+        "/scraper/src/index.ts",
+        "/shared/src/index.ts",
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "api"
+    },
+    {
+      "path": "scraper"
+    },
+    {
+      "path": "shared"
+    }
+  ],
+  "include": [
+    "./api/src/**/*",
+    "./scraper/src/**/*",
+    "./shared/src/**/*",
+  ]
+}

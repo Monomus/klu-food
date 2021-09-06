@@ -1,4 +1,8 @@
 {
-  "name": "shared",
-  "version": "1.0.0"
+  "name": "@klu-food/shared",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "compile": "tsc --build"
+  }
 }

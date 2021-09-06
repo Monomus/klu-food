@@ -1,7 +1,7 @@
 {
-  "name": "api",
+  "name": "@klu-food/api",
   "version": "1.0.0",
   "dependencies": {
-    "shared": "1.0.0"
+    "@klu-food/shared": "1.0.0"
   }
 }
