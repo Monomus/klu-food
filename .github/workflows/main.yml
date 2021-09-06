@@ -5,16 +5,21 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
+      - name: checking out Repo
       - uses: actions/checkout@v2
+      - name: Insatlling Yarn Dependencies
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: install # will run `yarn install` command
+          cmd: install 
+      - name: Executing Prettier
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: prettier:all 
+      - name: Executing Lint
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: lint:all 
+      - name: Building Workspace SharedS
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: workspace @klu-food/shared run
