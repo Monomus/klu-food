@@ -22,9 +22,9 @@
     "baseUrl": ".",
     "paths": {
       "@klu-food/*": [
-        "/api/src/index.ts",
-        "/scraper/src/index.ts",
-        "/shared/src/index.ts",
+        "./packages/api/src/index.ts",
+        "./packages/scraper/src/index.ts",
+        "./packages/shared/src/index.ts",
       ]
     }
   },
@@ -40,8 +40,8 @@
     }
   ],
   "include": [
-    "./api/src/**/*",
-    "./scraper/src/**/*",
-    "./shared/src/**/*",
+    "./packages/api/src/**/*",
+    "./packages/scraper/src/**/*",
+    "./packages/shared/src/**/*",
   ]
 }

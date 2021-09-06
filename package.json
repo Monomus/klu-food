@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "private": "true",
   "workspaces": [
-    "shared",
-    "scraper",
-    "api"
+    "packages/shared",
+    "packages/scraper",
+    "packages/api"
   ],
   "scripts": {
-    "lint": "eslint shared/src/**/*",
-    "prettier": "prettier shared/src/**/* --check",
-    "prettier:fix": "prettier shared/src/**/* --write"
+    "lint:all": "yarn workspace @klu-food/shared run lint",
+    "prettier:all": "yarn workspace @klu-food/shared run prettier"
   },
   "devDependencies": {
     "typescript": "^4.4.2",

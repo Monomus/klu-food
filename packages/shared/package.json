@@ -1,0 +1,19 @@
+{
+  "name": "@klu-food/shared",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "lint": "eslint --config ../../.eslintrc.json ./src/**/*",
+    "prettier": "prettier --config ../../.prettierrc --check ./src/**/* ",
+    "prettier:fix": "prettier --config ../../.prettierrc --write ./src/**/*"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.2",
+    "prettier": "^2.3.2",
+    "eslint": "^7.32.0",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "jest": "^27.1.0"
+  }
+}

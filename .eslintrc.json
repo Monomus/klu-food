@@ -2,9 +2,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project":[
-      "./api/tsconfig.json",
-      "./scraper/tsconfig.json",
-      "./shared/tsconfig.json"
+      "./tsconfig.json"
     ]
   },
   "extends": [
